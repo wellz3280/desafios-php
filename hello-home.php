@@ -1,12 +1,3 @@
-<?php
-	$erroLogin = $_GET['id'];
-
-	if($erroLogin == 1 ){
-		echo "usuario ou senha invalidos";
-		$borda = "red";
-	}
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -18,7 +9,7 @@
 <body>
 	<header>
 		
-			<h1>Desafio Hello</h1>
+			<h1 style="color: black; font-size: 45px;">Ola <?php echo $_GET['usuario']?></h1>
 
 	</header>
 	<main>
@@ -27,7 +18,7 @@
 				<form method="post" action="src/Hello/validaLogin.php">
 					
 					
-					<input class="enviar-login" type="submit" value="Login">
+					<input class="enviar-login" type="submit" value="Logout">
 					
 				</form>
 			</section>
