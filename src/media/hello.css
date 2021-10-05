@@ -1,6 +1,6 @@
 body{
 	font-family: arial;
-	background: rgba(0, 0, 0,0.9);
+	background: rgba(255, 255, 255,0.9);
 }
 
 header {
@@ -21,9 +21,10 @@ header {
 .input-login{
 	width: 45%;
 	display: inline;
-	border: 1px solid #dcdcdc;
+	border: 2px solid #dcdcdc;
 	 padding: 10px 20px;
 	 font-size:20px ;
+	 border-radius:5px ;
 
 }
 
