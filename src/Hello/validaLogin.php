@@ -11,5 +11,5 @@
 		header('location:../../Hello.php?id=1');
 		
 	}else{
-		echo "ola mdf";
+		header('location:../../Hello-home.php');
 	}
