@@ -11,5 +11,5 @@
 		header('location:../../Hello.php?id=1');
 		
 	}else{
-		header('location:../../Hello-home.php');
+		header('location:../../Hello-home.php?usuario='.$login);
 	}
