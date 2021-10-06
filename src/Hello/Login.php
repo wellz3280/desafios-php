@@ -11,12 +11,12 @@ class Login
 		$this->senha = $senha;
 	}
 
-	public function recuperaLogin()
+	private function recuperaLogin()
 	{
 		return $this->login;
 	}
 
-	public function recuperaSenha()
+	private function recuperaSenha()
 	{
 		return $this->senha;
 	}
