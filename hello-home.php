@@ -15,7 +15,7 @@
 	<main>
 			<section class="login">
 			
-				<form method="post" action="src/Hello/validaLogin.php">
+				<form method="post" action="">
 					
 					
 					<input class="enviar-login" type="submit" value="Logout">
