@@ -1,9 +1,10 @@
 <?php
-	$erroLogin = $_GET['id'];
-
-	if($erroLogin == 1 ){
-		echo "usuario ou senha invalidos";
-		$borda = "red";
+	if(!isset($_GET['id'])){
+		$_GET['id'] = 0;
+		$borda = "border: 2px solid #dcdcdc";
+	}else{
+		$_GET['id'] = 1; 
+		$borda = "border: 2px solid #ff0000";
 	}
 ?>
 
@@ -22,16 +23,17 @@
 
 	</header>
 	<main>
+
 			<section class="login">
 			
 				<form method="post" action="src/Hello/validaLogin.php">
 					
-					<input style="border:2px solid <?php echo $borda;?>" class="input-login" type="text" name="login" id="login" placeholder="Retr0" required>
+					<input style=" <?php echo $borda;?>" class="input-login" type="text" name="login" id="login" placeholder="Retr0" required>
 					
-					<input style="border:2px solid <?php echo $borda;?>" class="input-login" type="password" name="senha" id="senha" placeholder="**************" required>
+					<input style="<?php echo $borda;?>" class="input-login" type="password" name="senha" id="senha" placeholder="**************" required>
 				
 					<input class="enviar-login" type="submit" value="Login">
-					<input class="logout" type="submit" value="Logout">
+					
 				</form>
 			</section>
 	</main>
