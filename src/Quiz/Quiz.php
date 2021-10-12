@@ -3,12 +3,30 @@
 abstract class Quiz
 {
 	
+	private string $pergunta;
+	private string $respostaUsuario;
+	
 
-
-	public function Pontuacao(int $pontuacao = 0):int
+	
+	public function __construct(string $pergunta, string $respostaUsuario)
 	{
-		 return  $pontuacao;
+		$this->pergunta = $pergunta;
+		$this->respostaUsuario= $respostaUsuario;
+		
 	}
+
+	public function recuperaPergunta():string
+	{
+		return $this->pergunta;
+	}
+
+	public function recuperaRespostaUsuario():string
+	{
+		return $this->respostaUsuario;
+	}
+
+	
+	abstract public function Pontuacao():int;	
 
 
 
