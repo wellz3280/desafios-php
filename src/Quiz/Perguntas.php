@@ -4,32 +4,25 @@
 
 class Perguntas extends Quiz
 {
-	private string $respostaUsuario;
+	
 	private string $AlternativaCorreta ;
 
-	public function __construct(string $respostaUsuario, string $AlternativaCorreta = 'brasil')
+	public function __construct(string $pergunta,string $respostaUsuario, string $AlternativaCorreta)
 	{
 
+		parent::__construct($pergunta,$respostaUsuario);
 		$this->AlternativaCorreta = $AlternativaCorreta;
-		$this->respostaUsuario = $respostaUsuario;
+		
 	}
 
-	public function recuperaResposta():string
+	public function recuperaAlternativaCorreta():string
 	{
-		return $this->respostaUsuario;
+		return $this->AlternativaCorreta;
 	}
 	
-	public function opcaoCorreta():int
-	{
-		if($this->AlternativaCorreta === $this->respostaUsuario){
-			echo "certa resposta";
-			return $this->Pontuacao() + 1;
-		
-		}else{
-			echo "resposta Errada";
-			return $this->Pontuacao();
-		
-		}
-	}
+	public function Pontuacao():int
+		{
+			return 1;
+		}	
 
 }
