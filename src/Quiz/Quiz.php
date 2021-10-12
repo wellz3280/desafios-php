@@ -1,5 +1,7 @@
 <?php
 
+namespace Desafios\Php\Quiz;
+
 abstract class Quiz
 {
 	

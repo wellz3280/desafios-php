@@ -1,6 +1,8 @@
 <?php
+
+	namespace Desafios\Php\Quiz;
 	
-	require_once 'Quiz.php';
+	use Desafios\Php\Quiz\Quiz; 
 
 class Perguntas extends Quiz
 {
@@ -24,5 +26,7 @@ class Perguntas extends Quiz
 		{
 			return 1;
 		}	
+
+
 
 }
